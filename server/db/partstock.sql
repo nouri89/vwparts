@@ -1,0 +1,1 @@
+--SELECT column_name FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'some_table'; a query to show a table column name
