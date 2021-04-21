@@ -28,7 +28,35 @@ app.get("/all/parts", async (req, res) => {
 
    
 });
+app.get("/searchonepart", async (req, res) => {
+
+    try {
+        
+        const { searched_part } = req.query;
+       
+        const results = await db.query("SELECT  part_name,part_reference_number ,fit_cars,year_of_use,part_photo_link FROM part WHERE part_name || part_reference_number ILIKE $1 " ,[`%${searched_part}%`]);
+    console.log(results.rows);
+   res.status(200).json({
+       status: "success",
+       number_of_results: results.rows.length,
+        data:results.rows
+    })
+    } catch (error) {
+        console.log(error);
+    }
+
+
+
+   
+});
 app.get("/get/one/part/:part_id", (req, res) =>{
+    console.log(req.params);
+
+        
+    
+});
+app.get("/searched/part", (req, res) => {
+    const found_part= await
     console.log(req.params);
 
         
