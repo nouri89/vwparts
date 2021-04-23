@@ -1,10 +1,12 @@
-import logo from './logo.svg';
+
+import Header from "./component/Header/Header";
+
 
 
 function App() {
   return (
     <div className="App">
-    Rachid web site
+    <Header/>
     </div>
   );
 }

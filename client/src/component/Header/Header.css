@@ -1,0 +1,9 @@
+.header,.logo{
+    background-color: skyblue;
+    border: 1px solid skyblue;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    
+}

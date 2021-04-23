@@ -23,10 +23,6 @@ app.get("/all/parts", async (req, res) => {
     } catch (error) {
         console.log(error);
     }
-
-
-
-   
 });
 app.get("/searchonepart", async (req, res) => {
 
