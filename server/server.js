@@ -2,13 +2,24 @@ require('dotenv').config();
 const express = require("express");
 const morgan = require("morgan");
 const db = require("./db");
-
-
-
-
+const path = require("path");
 const app = express();
 app.use(express.json());
 app.use(morgan("dev"));
+
+
+//process.env.NODE.ENV => production or undefined
+app.use(morgan("dev"));
+//app.use("/",express.static( "./client"));
+if (process.env.NODE.ENV === "production") {
+    app.use(express.static(path.join(__dirname, "client/index.html")))
+    
+    
+}
+//console.log(path.join(__dirname, "client/index.html"));
+
+
+
 
 app.get("/all/parts", async (req, res) => {
 
@@ -72,7 +83,7 @@ app.delete("/delete", (req, res) =>{
 });
 
 
-const port = process.env.PORT;
+const port = process.env.PORT || 3006;
 //const port = 3001;
 
 
