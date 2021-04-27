@@ -4,7 +4,7 @@ const morgan = require("morgan");
 const db = require("./db");
 const path = require("path");
 const app = express();
-app.use(express.json());
+//app.use(express.json());
 app.use(morgan("dev"));
 
 //process.env.NODE.ENV => production or undefined
