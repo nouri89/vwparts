@@ -4,10 +4,8 @@
 		"client": "cd client && npm start",
 		"dev": "concurrently \"npm run server\" \"npm run client\""
 	},
-	"devDependencies": {
-		"webpack-dev-server": "^3.11.2"
-	},
 	"dependencies": {
+		"build": "^0.1.4",
 		"concurrently": "^6.0.2"
 	}
 }
