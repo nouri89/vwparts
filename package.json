@@ -1,13 +1,13 @@
 {
 	"scripts": {
+		"server": "cd server && npm start ",
 		"client": "cd client && npm start",
-		"server": "cd server && npm start",
-		"dev": "concurrently \"npm run dev:server\" \"npm run dev:client\""
-	},
-	"dependencies": {
-		"concurrently": "^6.0.2"
+		"dev": "concurrently \"npm run server\" \"npm run client\""
 	},
 	"devDependencies": {
 		"webpack-dev-server": "^3.11.2"
+	},
+	"dependencies": {
+		"concurrently": "^6.0.2"
 	}
 }
