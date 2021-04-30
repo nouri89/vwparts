@@ -16,5 +16,9 @@
 		"start": "nodemon server.js"
 	},
 	"author": "",
-	"license": "ISC"
+	"license": "ISC",
+	"engines": {
+    "node": "14.16.1",
+    "npm": "7.9.0"
+    }
 }
