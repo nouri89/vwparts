@@ -16,7 +16,7 @@ app.use(morgan("dev"));
 //}
 //console.log(path.join(__dirname, "client/index.html"));
 
-app.get("/all/parts", async (req, res) => {
+app.get("/", async (req, res) => {
 	try {
 		const results = await db.query("SELECT * FROM part");
 		console.log(results.rows);
