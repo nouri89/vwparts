@@ -4,11 +4,11 @@
 		"client": "cd client && npm start",
 		"dev": "concurrently \"npm run server\" \"npm run client\""
 	},
-	"dependencies": {
-		"concurrently": "^6.0.2"
-	},
 	"engines": {
 		"node": "14.16.1",
 		"npm": "7.9.0"
+	},
+	"devDependencies": {
+		"concurrently": "^6.0.2"
 	}
 }
