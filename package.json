@@ -1,5 +1,10 @@
 {
+	"name": " VW parts shop",
+  "version": "1.0.0",
+  "description": "Rachid Web page",
+  "main": "index.js",
 	"scripts": {
+		 "install:all": "npm install && npm --prefix ./server install && npm --prefix ./clientinstall",
 		"start": "concurrently \"npm run server\" \"npm run client\"",
 		"server": "cd server && npm start ",
 		"client": "cd client && npm start",
