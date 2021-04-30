@@ -5,7 +5,6 @@
   "main": "index.js",
 	"scripts": {
 		 "install:all": "npm install && npm --prefix ./server install && npm --prefix ./clientinstall",
-		"start": "concurrently \"npm run server\" \"npm run client\"",
 		"server": "cd server && npm start ",
 		"client": "cd client && npm start",
 		"dev": "concurrently \"npm run server\" \"npm run client\""
@@ -13,5 +12,5 @@
 	"dependencies": {
 		"concurrently": "^6.0.2"
 	}
-	
+
 }
