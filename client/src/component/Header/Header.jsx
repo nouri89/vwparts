@@ -10,8 +10,8 @@ export const Header = () => {
 			<div className="header">
 				<Image className=" logo" src={logo} thumbnail />
 				<h3>VW BIRTOUTA 59 , RUE ALI BOUHADJA(EN FACE LA DAIRA)</h3>
-				<i className="fas fa-phone-alt fa-2x"> 0078 2348 498 - 055 2103 637</i>
-				<h3>
+				<i className="fas fa-phone-alt fa-2x"> 078 2348 498 - 055 2103 637</i>
+				<h3 dir="rtl">
 					مفتوح من السبت إلى الخميس من الساعة 8:00 صباحًا حتى الساعة 18:30 مساءً
 				</h3>
 				<h3>Ouvert du samedi au jeudi de 08h00 à 18h30</h3>

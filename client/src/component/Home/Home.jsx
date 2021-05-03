@@ -39,7 +39,7 @@ const Home = () => {
 					<Card.Img variant="top" src={pic2} />
 					<Card.Body>
 						<Card.Title>قطع غيار أصلية بأسعار تنافسية</Card.Title>
-						<Card.Text>
+						<Card.Text dir="rtl">
 							تتجاوز خبرتنا 40 عامًا في مجال الميكانيكا. علاوة على الجودة
 							الممنوحة ، سنقدم أفضل النصائح لصيانة سيارتك
 						</Card.Text>
