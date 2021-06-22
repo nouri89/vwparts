@@ -6,11 +6,11 @@ import CardDeck from "react-bootstrap/CardDeck";
 import pic1 from "../images/bulkofparts1.jpg";
 import pic2 from "../images/bulkofparts2.jpg";
 import pic3 from "../images/servicing.jpg";
-
+import "./Home.css";
 
 const Home = () => {
 	return (
-		<div>
+		<div id="araText">
 			<CardDeck>
 				<Card>
 					<Card.Img variant="top" src={pic1} />
@@ -26,7 +26,7 @@ const Home = () => {
 				<Card>
 					<Card.Img variant="top" src={pic2} />
 					<Card.Body>
-						<Card.Title>قطع غيار أصلية بأسعار تنافسية</Card.Title>
+						<Card.Title dir="rtl">قطع غيار أصلية بأسعار تنافسية</Card.Title>
 						<Card.Text dir="rtl">
 							تتجاوز خبرتنا 40 عامًا في مجال الميكانيكا. علاوة على الجودة
 							الممنوحة ، سنقدم أفضل النصائح لصيانة سيارتك
