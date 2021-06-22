@@ -6,19 +6,7 @@ import CardDeck from "react-bootstrap/CardDeck";
 import pic1 from "../images/bulkofparts1.jpg";
 import pic2 from "../images/bulkofparts2.jpg";
 import pic3 from "../images/servicing.jpg";
-/*
-const [allParts, setAllParts] = useState([]);
 
-async function showAllParts() {
-
-	const resultes = await fetch("/allparts");
-	const parsResultes = await resultes.json();
-	setAllParts(parsResultes);
-	console.log(allParts);
-}
-	useEffect(()=>{showAllParts()},[]);
-
-*/
 
 const Home = () => {
 	return (
